@@ -1,0 +1,92 @@
+body {
+    border: 20px solid #E74836;
+}
+nav a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    color: black;
+}
+nav a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-decoration-color: #E74836;
+    font-weight: bold;
+}
+article {
+    cursor: pointer; 
+}
+article img {
+    transition: 0.2s ease;
+}
+article:hover span::before {
+    content: 'Leer Acá';
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: white;
+}
+article:hover img {
+    filter: saturate(0);
+    box-shadow: 0px 0px 7px 0px #E74836;
+    -webkit-box-shadow: 0px 0px 7px 0px #E74836;
+    -moz-box-shadow: 0px 0px 7px 0px #E74836;
+}
+footer {
+    background-color: #E74836;
+    color: white;
+}
+footer #nav-footer a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    color: white;
+}
+footer #redes-sociales a {
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: white;
+}
+footer #nav-footer a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-decoration-color: #B43728;
+    font-weight: bold;
+}
+footer #redes-sociales a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-decoration-color: #B43728;
+    font-weight: bold;
+}
+#nav-inicio {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    font-weight: 500;
+}
+#nav-inicio:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-decoration-color: #E74836;
+    font-weight: bold;
+}
+#disc-rotate {
+    animation: rotation 5s infinite linear;
+}
+#redes-sociales {
+    text-align: end;
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+
+@media (max-width: 768px) {
+    #redes-sociales h4, div {
+        text-align: center;
+    }
+  }
